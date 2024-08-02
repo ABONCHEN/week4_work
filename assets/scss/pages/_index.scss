@@ -1,3 +1,449 @@
-.index-title {
-  font-size: 100px;
+
+  /* --------header-------- */
+  .header{
+    max-width: 100%;
+    max-height: calc(100vw - 80px);
+    background:url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header.png");
+    background-position: top center;
+    background-size: cover;
+  }
+
+  .headerword{
+    width: 576px;
+    height: 787px;
+  }
+
+  .headerword {
+    p{
+      font-size: 1.5em;
+    color: $secondary-color;
+      
+    }
+    h1{
+      font-size: 2.66666em;
+      color: $secondary-color;
+      font-weight: bold;
+      padding-bottom: 4px;
+    }
+    }
+
+  .header_bt a{
+    max-width: 104px;
+    font-size: 0.833333em;
+    color: $nomal-color-light;
+    display: block;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-top: 0px;
+    background-color: $primary-color;
+  }
+
+
+  @media (max-width: 768px) {
+    .header{
+        background: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header-sm.png");
+        background-size: cover;
+    }
+    .headerword {
+      p{
+        font-size: 1.5em;
+        margin-top: 8px;
+      }
+      h1{
+        font-size: 2.66666em;
+        padding-bottom: 8px;
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    .header{
+        max-height: 396px;
+        background: url("https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header-sm.png");
+        background-size: cover;
+    }
+    .headerword{
+        height: 396px;
+      }
+    .headerword {
+       p{
+          font-size: 0.666666em;
+
+       }
+  
+       h1{
+          font-size: 1em;
+       }
+  }
+}
+  
+  /* --------detial-------- */
+  .detial{
+    background: #fbf2f2;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .main_title{
+    font-size: 2em;
+    font-weight: bold;
+    color: $secondary-color;
+    text-align: center;
+    padding-bottom: 36.5px;
+
+  }
+
+  .detial_icon {
+    text-align: center;
+    img{
+      max-width: 84px;
+  
+    }
+  }
+
+  .detial_item{
+    max-width: 100%;
+    gap: 24px;
+}
+  .detial_block{
+    width: 25%;
+  }
+
+  .detial_title{
+    font-size: 1em;
+    color: $secondary-color;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 8px;
+
+  }
+
+  .detial_word{
+    font-size: 0.666666666em;
+    color: $nomal-color-dark;
+ 
+  }
+
+  @media (max-width: 768px) {
+    .detial_item{
+      max-width: 100%;
+      flex-wrap: wrap;
+      gap: 0px;
+    }
+    .detial_block{
+      width: 50%;
+    }
+
+  }
+
+  @media (max-width: 576px) {
+    .detial{
+      padding-top: 40px;
+      padding-bottom: 40px;
+
+      &_item{
+        max-width: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 36px;
+      }
+    }
+    .main_title{
+      font-size: 1em;
+    }
+ 
+    .detial_block{
+      width: 100%;
+    }
+
+  }
+
+/*  經典系列鏡框 */
+
+.classic{
+  background:$nomal-color-light;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.classic_item{
+  max-width: 100%;
+  gap: 24px;
+}
+.classic_item li{
+  width: 100%;
+}
+.classic_photo{
+  width: 100%;
+  height: 100%;
+  max-height: 416px;
+  aspect-ratio:1/1;
+  background-position: top center;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.classic_title{
+  max-width: 100%;
+  color: $primary-color;
+  text-align: center;
+  font: italic normal 900 2em Roboto;
+}
+@media (max-width: 820px){
+  .classic_photo{
+    width: calc(820px/3 - 48px);
+  }
+  .classic_title{
+    font: italic normal 900 1.5em Roboto;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .classic_item{
+    max-width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+  }
+
+  .classic_item li{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .classic_photo{
+    width: 336px;
+    height: 336px;
+  }
+
+}
+
+
+@media (max-width: 576px) {
+
+  .classic_photo{
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+/* 聯名設計鏡框 */
+
+.cobrand{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.cobrand_fff{
+  color: $nomal-color-light;
+}
+.cobrand_title{
+  background: $nomal-color-light;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+
+@media (max-width: 768px) {
+  .cobrand_item{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+}
+
+/* 顧客推薦 */
+
+.recommend{
+  background:$nomal-color-light;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.customer_bloger{
+  width: 100%;
+  gap: 24px;
+}
+.customer{
+  width: 25%;
+  border-radius: 4px;
+  box-shadow: 0px 2px 6px #00000029;
+  border: 1px solid #DEE2E6;
+}
+
+
+.customer_photo{
+  width: 100%;
+  aspect-ratio:1/1;
+  background-size: cover;
+}
+.customer_name{
+  font-size: 0.666666em;
+  color:$nomal-color-dark;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.costomer_block{
+  padding-right: 16px;
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  height: 205px;
+
+
+}
+
+.customer_reeback{
+  font-size: 0.666666em;
+  color:$nomal-color-dark;
+}
+
+.customer_day{
+  font-size: 0.583333em;
+  padding-bottom: 16px;
+  color: #707070;
+  margin-top: auto;
+
+}
+
+
+@media (max-width: 768px) {
+  .customer_bloger{
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .customer{
+    width:calc(100% / 2 - 24px);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .customer_bloger{
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .customer{
+    width:100%;
+  }
+
+}
+
+/* 聯絡我們 */
+.contract{
+  background: $bg-light;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.contract_detial{
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.contract_word{
+  font-size: 0.8333333em;
+  color: $nomal-color-dark;
+  padding-bottom: 32px;
+}
+
+.contract_detial ul li{
+  font-size: 0.666666666em;
+  padding-top: 16px;
+}
+.labelitem{
+  padding-bottom: 8px;
+}
+.fillin input{
+  font-size: 0.666666666em;
+  width: 100%;
+  background:none;
+  border: 1px solid $nomal-color-dark;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+}
+/*webkit瀏覽器專用*/
+.fillin ::-webkit-input-placeholder {
+   color: rgba(0,0 ,0,.2 ); 
+  }
+/*Firefox 4-18瀏覽器專用*/
+.fillin input::-moz-placeholder { 
+   color: rgba(0,0 ,0,.2 ); 
+  }
+/*Firefox 19+瀏覽器專用*/
+.fillin input::-moz-placeholder{
+   color: rgba(0,0 ,0,.2 );
+  }
+/*IE10瀏覽器專用*/
+.fillin:-ms-input-placeholder{
+   color: rgba(0,0 ,0,.2 );
+  }
+
+
+.fillin textarea{
+  font-size: 0.666666666em;
+  width: 100%;
+  background:none;
+  border: 1px solid $nomal-color-dark;
+  resize:none;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  color: rgba(0,0 ,0,.2 );
+
+}
+
+.checkbutton{
+  width: 416px;
+  margin: 0 auto;
+  padding-top: 48px;
+
+}
+.checkbutton a{
+  display: block;
+  background:$primary-color;
+  font-size: 0.666666666em;
+  color: $nomal-color-light;
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.checkbutton a:hover{
+  background: $secondary-color;
+  transition: .3s;
+}
+
+@media (max-width: 768px) {
+  .contract_detial{
+    max-width: 75%;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .contract_detial{
+    max-width: 100%;
+  }
+
+  .checkbutton{
+    width: 100%;
+    padding-top: 24px;
+  }
+
+.checkbutton a:hover{
+  background: $secondary-color;
+  margin-right: 5%;
+  transition: .3s;
+}
+
 }

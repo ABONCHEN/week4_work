@@ -1,0 +1,55 @@
+.pointmap iframe{
+    max-width: 100%;
+    width: 746px;
+    aspect-ratio:1/ 0.605;
+}
+.point{
+    padding-bottom: 80px;
+    gap: 24px;
+}
+
+.pointmiximg{
+    width: 50%;
+    aspect-ratio:1/ 0.426;
+
+}
+
+@media screen and (max-width:845px) {
+    .point{
+        flex-direction: column;
+    }
+    .pointmiximg{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        
+    }
+    .pointmiximg .storeimg,.pointword{
+        width: calc(100%/2 - 12px);
+    }
+
+    .pointmap iframe{
+        max-width: 100%;
+    }
+
+
+    }
+
+    @media screen and (max-width:576px) {
+        .point{
+            flex-direction: column;
+        }
+        .pointmiximg{
+            flex-direction: column;
+        }
+        .pointmiximg .storeimg,.pointword{
+            width:100%;
+        }
+    
+        .pointmap iframe{
+            max-width: 100%;
+        }
+    
+    
+        }

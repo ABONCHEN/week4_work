@@ -1,0 +1,19 @@
+.bigtitle {
+    font-size: 2em;
+    border-left: 8px solid $primary-color;
+    font-weight: 700;
+    padding-left: 16px;
+    margin-top: 96px;
+    margin-bottom: 38px;  
+    color: $nomal-color-dark;
+}
+
+@media screen and (max-width:576px) {
+    .bigtitle {
+        font-size: 1em;
+        margin-top: 40px;
+        margin-bottom: 31px;  
+        color: $nomal-color-dark;
+    }
+
+}

@@ -1,0 +1,31 @@
+.question{
+    &_all{
+        padding-bottom: 80px;
+    }
+    &_h2{
+        font-family:$font-kinds;
+        font-size: 1em;
+        font-weight: 700;
+    }
+    &_title{
+        font-family:$font-kinds;
+        font-size: 0.8333333em;
+        font-weight: 700;
+        padding-top: 24px;
+    }
+}
+
+
+.answer{
+    font-family:$font-kinds;
+    font-size: 0.66666666em;
+    font-weight: 400;
+    padding-top: 8px;
+}
+
+
+@media screen and (max-width:576px){
+    .question_all{
+        padding-bottom: 64px;
+    }
+}
